@@ -30,7 +30,11 @@ curl --location --request PUT 'http://localhost:5000/api/location' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "latLong": [58.0755381, 16.5555555],
+<<<<<<< HEAD
 "date": "2021-02-20"
+=======
+"date": "2021-02-20",
+>>>>>>> 9f217eca90119e4ef1a22014cd680ba026619aec
 }'<br />
 
 read Locations: <br />
