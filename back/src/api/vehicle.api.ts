@@ -23,7 +23,6 @@ module.exports = ({ sequelize, models: { VehicleModel } }) => {
     "/",
     authService.verifyToken,
     async ({ query: { offset, limit } }, res) => {
-      console.log("---", authService.signToken(45214))
       try {
         const { message }: IVehicleFindAll = await vehicleService.readAll({
           VehicleModel,
@@ -31,8 +30,8 @@ module.exports = ({ sequelize, models: { VehicleModel } }) => {
           limit,
         })
         res.send(message)
-      } catch (e) {
-        console.log("e", e)
+      } catch ({ errorCode, message }) {
+        res.status(errorCode).send(message)
       }
     }
   )

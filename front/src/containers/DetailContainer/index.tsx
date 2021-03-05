@@ -28,7 +28,6 @@ export default ({
   const paginationAction = (offset, limit) => setPagination({ offset, limit })
 
   useEffect(() => {
-    console.log("dateRange", dateRange)
     httpClient
       .get(
         `/location/${id}?start=${dateformat(

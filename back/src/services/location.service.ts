@@ -16,7 +16,12 @@ const service = {
         limit: Number(limit),
       })
         .then((data) => resolve(data))
-        .catch((e) => reject(e))
+        .catch(() =>
+          reject({
+            errorCode: 500,
+            message: "Cannot read",
+          })
+        )
     })
   },
   update: ({ LocationModel, vehicleID, latLong, date }) => {

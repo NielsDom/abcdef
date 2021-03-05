@@ -36,8 +36,8 @@ module.exports = ({ sequelize, models: { LocationModel } }) => {
           id,
         })
         res.send(allVehicles)
-      } catch (e) {
-        console.log("e", e)
+      } catch ({ errorCode, message }) {
+        res.status(errorCode).send(message)
       }
     }
   )
