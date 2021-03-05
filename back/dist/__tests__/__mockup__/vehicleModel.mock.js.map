@@ -1,0 +1,1 @@
+{"version":3,"file":"vehicleModel.mock.js","sourceRoot":"","sources":["../../../src/__tests__/__mockup__/vehicleModel.mock.ts"],"names":[],"mappings":";;;;;AAAA,wDAAwC;AAExC,MAAM,gBAAgB,GAAG,iBAAgB,CAAC,MAAM,CAAC,cAAc,EAAE;IAC/D,EAAE,EAAE,YAAY;IAChB,SAAS,EAAE,qBAAqB;IAChC,SAAS,EAAE,qBAAqB;CACjC,CAAC,CAAA;AAEF,kBAAe,gBAAgB,CAAA"}
