@@ -43,8 +43,8 @@
     ]
   },
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\"",
+    "start": "npx typescript && node dist/index.js",
+    "dev": "npx concurrently \"npx typescript -w\" \"nodemon dist/index.js\"",
     "test": "jest"
   }
 }

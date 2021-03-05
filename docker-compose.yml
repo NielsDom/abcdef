@@ -26,7 +26,7 @@ services:
     ports:
       - 8081:80
 
-  back:
+  back-v1:
     restart: always
     container_name: back
     environment:
@@ -47,13 +47,12 @@ services:
     ports:
       - "5000:5000"
 
-  front:
+  front-v1:
     stdin_open: true
     restart: always
     container_name: front
     depends_on:
-      - mysql
-      - back
+      - back-v1
     build:
       context: ./front/
     command: yarn start
