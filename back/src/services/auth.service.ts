@@ -13,6 +13,7 @@ const service = {
     )
   },
   verifyToken: ({ headers: { authorization } }, res, next) => {
+    console.log("authorization", authorization)
     if (authorization) {
       jwt.verify(authorization.split(" ")[1], JWT_SECRET, (err) => {
         if (err) {
