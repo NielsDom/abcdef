@@ -50,10 +50,6 @@ app.use(bodyParser.json())
 
 const models = modelsList(sequelize)
 
-app.get("/", (req, res) => {
-  res.send("The yddddolodddd!")
-})
-
 app.use("/api/location", require("./api/location.api")({ sequelize, models }))
 app.use("/api/vehicle", require("./api/vehicle.api")({ sequelize, models }))
 
