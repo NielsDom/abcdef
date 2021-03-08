@@ -38,6 +38,6 @@ read Locations: <br />
 curl --location --request GET 'http://localhost:5000/api/location/123416999999?start=2021-01-04&end=2021-03-04&offset=0&limit=50' \
 --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ4OTE2OTR9.DV5QuzxD0iHPUfM07HjZ99JdVOhYBSJvy9mfdoHBHls'<br />
 
-### Request example
+### Tests
 
 Tests BE: docker exec -it 092800b8c37c bash && yarn test
