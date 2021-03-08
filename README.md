@@ -40,4 +40,4 @@ curl --location --request GET 'http://localhost:5000/api/location/123416999999?s
 
 ### Tests
 
-Tests BE: docker exec -it 092800b8c37c bash && yarn test
+Tests BE: docker exec -it back bash && yarn test
