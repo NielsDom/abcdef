@@ -34,7 +34,7 @@ export default (sequelize) => ({
     {
       indexes: [
         {
-          unique: true,
+          unique: false,
           fields: ["vehicleID"],
         },
       ],
