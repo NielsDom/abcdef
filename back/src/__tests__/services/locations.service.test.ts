@@ -56,7 +56,7 @@ describe("Location services:", () => {
           date: "2021-02-20",
         })
 
-        expect(message).toBe("Vehicle location 46523615320 created")
+        expect(message).toContain("Vehicle location 46523615320")
       } finally {
         done()
       }

@@ -29,9 +29,7 @@ describe("Vehicle services:", () => {
           count: 1,
           rows: [
             {
-              createdAt: "2021-03-04 20:14:24",
               id: 123416999999,
-              updatedAt: "2021-03-04 20:14:24",
             },
           ],
         })
