@@ -25,7 +25,6 @@ export default (sequelize) => ({
       },
       latLong: {
         type: DataTypes.GEOMETRY("POINT"),
-        // allowNull: false,
       },
       date: {
         type: DataTypes.DATEONLY,
@@ -33,6 +32,12 @@ export default (sequelize) => ({
       },
     },
     {
+      indexes: [
+        {
+          unique: true,
+          fields: ["vehicleID"],
+        },
+      ],
       sequelize,
       modelName: "LocationModel",
       tableName: "LOCATIONS",
